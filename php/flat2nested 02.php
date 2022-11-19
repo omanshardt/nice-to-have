@@ -14,7 +14,6 @@
                 if ($row[$parentIdName] === $parentIdentifier) {
                     if($lvl > 1 && $addParentReference) {
                         $row['_parent'] = &$col;
-                        $row['oxtitle'] = $row['oxtitle'].' |'.$lvl;
                     }
                     $col[$collectionName][] = &$row;
                     unset($data[$key]);
